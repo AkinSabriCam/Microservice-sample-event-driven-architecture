@@ -20,7 +20,7 @@ When updating a customer in the Customer microservice, it publishes an event to 
 
 
 
-![microservices](https://github.com/AkinSabriCam/Microservice-sample-event-driven-architecture/MicroservicesSample/microservices.png)
+![microservices](https://github.com/AkinSabriCam/Microservice-sample-event-driven-architecture/tree/master/MicroservicesSample/microservices.png)
 
 ##  
 
