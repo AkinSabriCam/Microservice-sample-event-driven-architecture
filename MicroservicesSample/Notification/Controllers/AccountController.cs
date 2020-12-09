@@ -19,7 +19,7 @@ namespace Notification.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<User>>> GetAll()
+        public async Task<ActionResult<List<UserDto>>> GetAll()
         {
             return await _mediator.Send(new GetAllUsersQuery());
         }

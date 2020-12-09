@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Notification.Application.Customer
 {
-    public class GetAllCustomersQuery : IRequest<List<Domain.Customer>>
+    public class GetAllCustomersQuery : IRequest<List<CustomerDto>>
     {
         
     }

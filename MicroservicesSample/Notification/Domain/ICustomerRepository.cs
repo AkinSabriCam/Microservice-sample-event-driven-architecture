@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Notification.Application.Customer;
 
 namespace Notification.Domain
 {
@@ -8,7 +9,7 @@ namespace Notification.Domain
     {
         Task<Customer> GetById(Guid id);
 
-        Task<List<Customer>> GetAll();
+        Task<List<CustomerDto>> GetAll();
         
         Task<Customer> Add(Customer entity);
 
