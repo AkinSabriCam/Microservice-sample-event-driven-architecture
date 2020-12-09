@@ -5,7 +5,7 @@ This project is basic sample to understand communication between microservices.
 There are three microservices in the repository and every single on of them has own responsibility.
 
 1- Identity microservice just inserts user entity to its database  
-2- Customer microservice just updates customer entity in its database 
+2- Customer microservice just updates customer entity in its database   
 3- Notification microservice just consumes events and  inserts or updates related data in its database
 
 When creating a user in the Identity microservice, it publishes an event to queue, Notification, and Customer projects consume this event.
