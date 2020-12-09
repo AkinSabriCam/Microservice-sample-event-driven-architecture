@@ -11,7 +11,7 @@ There are three microservices in the repository and every single on of them has 
 When creating a user in the Identity microservice, it publishes an event to queue, Notification, and Customer projects consume this event.
 When updating a customer in the Customer microservice, it publishes an event to queue, Notification, and Identity projects consume this event.
 
-​	 Run this command `docker-compose up` in api root folder before runnig the projects. This compose file includes postgresql, rabbitmq, redis containers.
+​	 Run this command `docker-compose up` in MicroservicesSample root folder before runnig the projects. This compose file includes postgresql, rabbitmq, redis containers.
 
 # Use Case
 
