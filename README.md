@@ -28,7 +28,7 @@ When updating a customer in the Customer microservice, it publishes an event to 
 
 * .Net Core 3.1
 * EntityFrameworkCore
-* RabbitMQ with MassTransit Framework
+* RabbitMQ with MassTransit
 * MediatR
 * Redis Cache tool
 * Swagger
