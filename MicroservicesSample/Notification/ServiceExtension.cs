@@ -1,10 +1,12 @@
 ﻿using System;
+using Common.Caching;
 using Common.Event;
 using MassTransit;
 using MassTransit.AspNetCoreIntegration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Notification.Caching;
 using Notification.MassTransit;
 
 namespace Notification
@@ -59,6 +61,14 @@ namespace Notification
                     Description = "A simple example ASP.NET Core Web API",
                 });
             });
+        }
+        
+        
+        public static void AddRedisCache(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.Configure<RedisSettingsModel>(configuration.GetSection("RedisSettings"));
+            services.AddSingleton<IRedisManager, RedisManager>();
+            services.AddSingleton<IRedisCacheDatabaseProvider, RedisCacheDatabaseProvider>();
         }
     }
 }

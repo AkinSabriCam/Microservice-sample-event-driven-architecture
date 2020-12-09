@@ -9,7 +9,7 @@ namespace Notification.EntityFramework
     public class UserRepository :IUserRepository
     {
         private readonly DbSet<User> _dbSet;
-
+        
         public UserRepository(NotificationDbContext dbContext)
         {
             _dbSet = dbContext.Set<User>();

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Common.Caching;
 using Microsoft.Extensions.Options;
 using StackExchange.Redis;
