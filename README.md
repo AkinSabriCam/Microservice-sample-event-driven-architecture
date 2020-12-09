@@ -26,15 +26,15 @@ When updating a customer in the Customer microservice, it publishes an event to 
 
 # Tech Stack
 
-.Net Core 3.1
-EntityFrameworkCore
-RabbitMQ with MassTransit Framework
-MediatR
-Redis Cache tool
-Swagger
-Docker Container
-Command Handlers Patterns
-CQS
-OOP
-Microservices
-SOLID
+* .Net Core 3.1
+* EntityFrameworkCore
+* RabbitMQ with MassTransit Framework
+* MediatR
+* Redis Cache tool
+* Swagger
+* Docker Container
+* Command Handlers Patterns
+* CQS
+* OOP
+* Microservices
+* SOLID
