@@ -17,7 +17,6 @@ namespace Identity.Domain.EventListeners
 
         public async Task Handle(UserUpdatedEvent userEvent)
         {
-            // UserUpdatedEvent was consumed here..
             var user = await _repository.GetById(userEvent.Id);
 
             user.FirstName = userEvent.FirstName;

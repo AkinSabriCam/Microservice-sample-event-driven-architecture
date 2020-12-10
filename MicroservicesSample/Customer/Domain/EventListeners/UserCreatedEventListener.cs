@@ -17,7 +17,6 @@ namespace Customer.Domain.EventListeners
         
         public async Task Handle(UserCreatedEvent userEvent)
         {
-            //Identity microservice üzerinde user created edildiğinde burada consume edilmektedir.
             await _repository.Add(new Customer
             {
                 Id = userEvent.Id,
