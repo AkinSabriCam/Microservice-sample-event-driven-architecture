@@ -31,6 +31,6 @@ services:
       
   redis:
     image: redis
-    container_name: pms_redis
+    container_name: redis
     ports:
       - "6379:6379"
